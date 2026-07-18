@@ -102,6 +102,15 @@
               <b>Actions → Read and write</b> (trigger test runs). Leave everything else "No access".</li>
           <li>Click <b>Generate token</b> (green button, bottom) and copy the <code>github_pat_…</code> value it shows.</li>
         </ol>
+        <p><b>Repo not in the "Only select repositories" list?</b> Fine-grained
+        tokens only cover repos you <i>own</i>. If you're a <b>collaborator</b>
+        on someone else's repo (e.g. before an ownership transfer), use a
+        <b>classic</b> token instead:
+        <a href="https://github.com/settings/tokens/new" target="_blank">github.com/settings/tokens/new</a>
+        → note: <code>raid-console</code> → tick the <b>repo</b> scope → Generate →
+        paste the <code>ghp_…</code> value below (and set Repo owner to the
+        account that owns the repo). Once the repo is transferred to you,
+        revoke the classic token and switch to a fine-grained one.</p>
         <div class="row">
           <div>
             <label>Repo owner (GitHub username)</label>
